@@ -24,7 +24,7 @@ const model = ref({});
 const formId = computed(() => import.meta.env.VITE_FORM_ID);
 
 const handleSubmit = (formData) => {
-  alert('Form submitted with data:', JSON.stringify(formData, null, 2));
+  alert('Form submitted with data:\n' + JSON.stringify(formData, null, 2));
 };
 
 const getData = () => {
